@@ -42,14 +42,14 @@ seasBtnAll.addEventListener("click", () => {
 function initialize() {
   var mapOptions = {
     zoom: 10,
-    center: new google.maps.LatLng(39.774129, 64.4312),
+    center: new google.maps.LatLng(39.693628, 64.375877),
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     minZoom: 2,
   };
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
   var infoWindow = new google.maps.InfoWindow();
   var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(39.774129, 64.4312),
+    position: new google.maps.LatLng(39.68675, 64.370455),
     map: map,
     title: "Uzbekistan, Bukhara",
   });
@@ -62,3 +62,24 @@ function initialize() {
   });
 }
 google.maps.event.addDomListener(window, "load", initialize);
+
+const modal = document.querySelector(".modal");
+const btns = document.querySelectorAll(".W-btn");
+const buymodal = document.querySelector(".buy-modal");
+const x = document.querySelector(".x");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    modal.classList.remove("close2");
+    buymodal.classList.remove("close2");
+  });
+});
+
+modal.addEventListener("click", () => {
+  modal.classList.add("close2");
+  buymodal.classList.add("close2");
+});
+x.addEventListener("click", () => {
+  modal.classList.add("close2");
+  buymodal.classList.add("close2");
+});
