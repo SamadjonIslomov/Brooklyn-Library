@@ -587,6 +587,7 @@ html {
   margin: 40px auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .year {
   width: fit-content;
@@ -723,4 +724,226 @@ html {
   left: 150px;
   position: relative;
   cursor: pointer;
+}
+.burger {
+  width: 100px;
+  display: none;
+}
+.bur {
+  display: none;
+}
+.d {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 550px) {
+  body {
+    width: 550px;
+    margin: 0 auto;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  * {
+    scrollbar-width: none;
+    margin: 0 auto;
+  }
+  .About {
+    height: fit-content;
+    margin-bottom: 50px;
+  }
+  .img-about {
+    display: block;
+    margin: 0 auto;
+    height: fit-content;
+    width: 450px;
+  }
+  .nav {
+    display: none;
+  }
+  .navigator {
+    padding: 10px;
+  }
+  .sarlavha {
+    width: fit-content;
+    font-size: 30px;
+    margin: 0 120px 0 0;
+  }
+  .burger {
+    width: fit-content;
+    display: block;
+  }
+  .profileIcon .bacg {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon {
+    width: 15px;
+  }
+  .screen {
+    width: 450px;
+    height: fit-content;
+    padding: 45px 40px 35px 40px;
+    font-family: "Forum";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  .favourites {
+    width: 550px;
+  }
+  .text-about2 {
+    width: 500px;
+    height: 80px;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+  }
+  .b {
+    display: block;
+    width: 450px;
+    height: fit-content;
+    margin: 0 auto 40px;
+  }
+  .w {
+    width: 450px;
+    height: 500px;
+  }
+  .w1 {
+    width: 450px;
+    height: 500px;
+    margin-bottom: 50px;
+    margin: 0;
+  }
+  .close {
+    display: none;
+  }
+  .textW1 {
+    width: fit-content;
+    height: fit-content;
+    font-family: "Forum";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  .textW2 {
+    width: fit-content;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  .textW3 {
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  .W-img {
+    width: 150px;
+    height: 250px;
+    margin-left: 300px;
+  }
+  .coffeShop {
+    width: 549px;
+    height: fit-content;
+  }
+  .cof-text1 {
+    width: fit-content;
+    font-family: "Forum";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 2px;
+    margin: 0 auto;
+  }
+  .cof-text2 {
+    width: 500px;
+    height: fit-content;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .shopCont {
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacts {
+    width: 549px;
+    height: 850px;
+  }
+  .container {
+    display: block;
+  }
+  .container2 {
+    width: 500px;
+    height: 400px;
+  }
+  .flex {
+    display: block;
+  }
+  .box1 {
+    width: 500px;
+    margin-bottom: 50px;
+  }
+  .boxB {
+    width: 500px;
+  }
+  .boxbcg {
+    width: 450px;
+  }
+  .input1 {
+    width: 410px;
+  }
+  .line {
+    width: 450px;
+  }
+  .textmain {
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    margin: 0%;
+  }
+  .timeMain {
+    width: 130px;
+    font-family: "Inter";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+    margin: 0%;
+  }
+  .chMain2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .icons {
+    width: fit-content;
+    margin: 0;
+  }
 }

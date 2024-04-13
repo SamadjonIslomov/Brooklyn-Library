@@ -74,7 +74,6 @@ btns.forEach((btn) => {
     buymodal.classList.remove("close2");
   });
 });
-
 modal.addEventListener("click", () => {
   modal.classList.add("close2");
   buymodal.classList.add("close2");
