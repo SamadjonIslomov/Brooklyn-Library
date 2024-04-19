@@ -42,14 +42,14 @@ seasBtnAll.addEventListener("click", () => {
 function initialize() {
   var mapOptions = {
     zoom: 10,
-    center: new google.maps.LatLng(39.693628, 64.375877),
+    center: new google.maps.LatLng(39.774627, 64.420394),
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     minZoom: 2,
   };
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
   var infoWindow = new google.maps.InfoWindow();
   var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(39.68675, 64.370455),
+    position: new google.maps.LatLng(39.774627, 64.420394),
     map: map,
     title: "Uzbekistan, Bukhara",
   });
@@ -67,6 +67,15 @@ const modal = document.querySelector(".modal");
 const btns = document.querySelectorAll(".W-btn");
 const buymodal = document.querySelector(".buy-modal");
 const x = document.querySelector(".x");
+const buyButton = document.querySelector(".buy-btn");
+const inputs = document.querySelectorAll(".inp1, .inp2");
+
+buyButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  inputs.forEach((input) => {
+    input.value = "";
+  });
+});
 
 btns.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -77,8 +86,16 @@ btns.forEach((btn) => {
 modal.addEventListener("click", () => {
   modal.classList.add("close2");
   buymodal.classList.add("close2");
+  bur.classList.add("close");
 });
 x.addEventListener("click", () => {
   modal.classList.add("close2");
   buymodal.classList.add("close2");
+});
+
+const burger = document.querySelector(".burger");
+const bur = document.querySelector(".bur1");
+burger.addEventListener("click", () => {
+  bur.classList.remove("close");
+  modal.classList.remove("close2");
 });
