@@ -95,7 +95,16 @@ x.addEventListener("click", () => {
 
 const burger = document.querySelector(".burger");
 const bur = document.querySelector(".bur1");
+
 burger.addEventListener("click", () => {
   bur.classList.remove("close");
-  modal.classList.remove("close2");
+  if (modal) modal.classList.remove("close2");
+});
+
+const nav = document.querySelectorAll(".color");
+nav.forEach((item) => {
+  item.addEventListener("click", () => {
+    bur.classList.add("close");
+    if (modal) modal.classList.add("close2");
+  });
 });
